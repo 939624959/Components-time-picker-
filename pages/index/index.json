@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "时间选择器",
+  "usingComponents": {
+    "time-picker": "/components/time-picker/time-picker",
+    "van-cell": "@vant/weapp/cell/index"
+  }
+}

@@ -1,0 +1,28 @@
+<!--components/timePicker/time-picker.wxml-->
+<van-popup
+	show="{{ isShow }}"
+	round
+	position="bottom"
+	bind:close="onClose"
+>
+	<!-- 标题 -->
+	<view class="title">
+		<view>{{title}}</view>
+		<view bindtap="onClose" style="width: 50rpx;height: 50rpx;text-align: center;"><van-icon name="cross" /></view>
+		
+	</view>
+	<!-- 选择器 -->
+	<van-tree-select
+		items="{{ itemTree }}"
+		main-active-index="{{ mainActiveIndex }}"
+		active-id="{{ activeId }}"
+		main-active-class="green"
+		content-active-class="green"
+		bind:click-nav="onClickNav"
+		bind:click-item="onClickItem"
+	/>
+	<!-- 确定按钮 -->
+	<view class="footerBtn">
+		<van-button type="primary" block round bind:click="timePicked">确定</van-button>
+	</view>
+</van-popup>

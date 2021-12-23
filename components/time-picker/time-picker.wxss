@@ -1,0 +1,18 @@
+/* components/timePicker/time-picker.wxss */
+
+
+.title{
+	font-size: 28rpx;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20rpx 40rpx;
+}
+.green{
+	color: #04c255;
+	border-color: #04c255!important;
+}
+.footerBtn{
+	padding: 20rpx;
+	border-top: 1rpx solid #f7f8fa;
+}

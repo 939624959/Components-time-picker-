@@ -1,0 +1,7 @@
+<!--pages/index/index.wxml-->
+<view>
+	<view class="label">期望上门时间：</view>
+	<van-cell title="{{expTime}}" is-link bind:click="toPickTime"/>
+	<!-- 时间选择器 -->
+	<time-picker title="选择上门时间" dayNum="{{dayNum}}" timeArr="{{timeArr}}" isShow="{{showTimePicker}}" bindcloseEvent="closeTimePicker" bindonSelected="updateExpTime"/>
+</view>
